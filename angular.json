@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "TASKMANAGERAPP": {
+    "taskmanagerAPP": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/TASKMANAGERAPP",
+            "outputPath": "dist/taskmanagerAPP",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "TASKMANAGERAPP:build:production"
+              "buildTarget": "taskmanagerAPP:build:production"
             },
             "development": {
-              "buildTarget": "TASKMANAGERAPP:build:development"
+              "buildTarget": "taskmanagerAPP:build:development"
             }
           },
           "defaultConfiguration": "development"
