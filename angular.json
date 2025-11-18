@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "todolist": {
+    "TASKMANAGERAPP": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,6 +13,8 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
+            "outputPath": "dist/TASKMANAGERAPP",
+            "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -56,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "todolist:build:production"
+              "buildTarget": "TASKMANAGERAPP:build:production"
             },
             "development": {
-              "buildTarget": "todolist:build:development"
+              "buildTarget": "TASKMANAGERAPP:build:development"
             }
           },
           "defaultConfiguration": "development"
